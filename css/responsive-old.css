@@ -1,0 +1,116 @@
+@charset "utf-8";
+.mobile {display:none;}
+
+@media (max-width:768px) {
+
+    body.overflow-none {overflow:hidden;}
+    .top {position:relative;width:calc(100% - 30px);padding:15px 24px;}
+    .top .mobile.nav {position:absolute;right:24px;top:15px;display:flex;align-items:center;}
+    .top .mobile.nav .language {display:flex;align-items:center;font-size:10px;font-weight:700;margin-right:18px;text-transform:uppercase;}
+    .top .mobile.nav .language i.icon-caret {width:7px;height:7px;background:url('../images/icon_language_caret.png') no-repeat top center /50%;margin-left:5px;margin-top:1px;}
+    .top .mobile.nav .nav-bar {position:relative;width:18px;height:16px;}
+    .top .mobile.nav .nav-bar:before {position:absolute;top:0;content:'';width:18px;height:2px;background:#000;transition:.3s;}
+    .top .mobile.nav .nav-bar:after {position:absolute;bottom:0;content:'';width:18px;height:2px;background:#000;transition:.3s;}
+    .top .mobile.nav .nav-bar span {position:absolute;top:7px;width:18px;height:2px;background:#000;transition:.3s;}
+
+    .top.mobile-view {display:block;padding:0;height:100%;}
+    .top.mobile-view .logo,.top.mobile-view .mobile.nav .language {display:none;}
+    .top.mobile-view .mobile.nav .nav-bar {}
+    .top.mobile-view .mobile.nav .nav-bar:before {top:6px;background:#fff;transform:rotate(45deg);transition:.3s;}
+    .top.mobile-view .mobile.nav .nav-bar:after  {top:6px;background:#fff;transform:rotate(-45deg);transition:.3s;}
+    .top.mobile-view .mobile.nav .nav-bar span {display:none;transition:.3s;}
+    .top .gnb {display:none;}
+    .top.mobile-view .gnb {display:block;width:100%;height:auto;padding:75px 0 0 25px;margin:0;}
+    .top.mobile-view .gnb > li {margin:0 0 30px;}
+    .top.mobile-view .gnb > li > a {font-size:20px;color:#aaa;font-weight:300;}
+    .top.mobile-view .gnb ul.sub-menu {display:none;position:static;width:100%;}
+    .top.mobile-view .gnb > li ul.sub-menu li a {font-size:12px;color:#fff;line-height:24px;}
+    .top.mobile-view .mobile.menu_logo {position:absolute;left:0;right:0;bottom:45px;display:block;text-align:center;}
+    .top.mobile-view .mobile.menu_logo label {display:inline-block;width:36px;height:36px;background:url('../images/mobile_menu_bottom_logo.png') no-repeat center;}
+    .top.mobile-view .mobile.menu_logo strong {display:block;font-size:10px;color:#fff;opacity:.2;margin-top:20px;}
+    .menu-hover-box.mobile {position:fixed;left:0;right:0;top:0;bottom:0;width:100%;height:100%;display:block;background:#666;}
+    .main .bxslider .slide {height:450px;}
+    .main .slide .slide-contents {width:100%;padding:15px;}
+    .main .slide .slide-contents .slide-contents-wrap {position:absolute;top:50%;transform:translateY(-50%);margin:0 !important;}
+    .main .slide .slide-contents .paragraph {font-size:12px;line-height: 16px;}
+    .main .slide .slide-contents strong {font-size: 24px;line-height: 27px;font-weight: 500;letter-spacing: -.05em;}
+    .main .bx-wrapper .bx-pager .bx-pager-item a {display: block;width: 8px;height: 8px;font-size: 0;border-radius: 50px;border: 1px solid #fff;background: #000;opacity: .3;margin: 0 5px;}
+    .main .bx-wrapper .bx-pager .bx-pager-item a.active {width:100px;}
+
+
+
+
+    .d-flex {display:block;}
+    .main .section {min-height:400px;}
+    .main .section-wrap {display:block;width:100%;padding:55px 15px;}
+    .main .section-title {margin:0 0 20px;}
+    .main .section-title h2 {font-size: 24px;font-weight: 700;margin-bottom: 15px;}
+    .main .section-title label {font-size: 10px;font-weight: 400;}
+    .main .section-contents {width:100%;margin:0;}
+    .main .d-flex .sub-section {width:100% !important;height:auto;margin:0 0 10px;}
+    .main .sub-section {position: relative;height: 164px;border-radius:8px;box-shadow: 0 0 12px rgb(0, 0, 0, .3);padding:15px 10px;}
+    .main .sub-section .paragraph {margin-bottom:25px;font-size: 10px;font-weight: 300;line-height:12px;}
+    .main #about .sub-section.first .paragraph br {display:none;}
+    .main #about .sub-section.first h3,.main #about .sub-section.third h3 {left:auto;right:10px;bottom: 15px;font-size: 12px;}
+    .main .sub-section h3 {position: absolute;left:10px;bottom:15px;font-size:12px;font-weight:300;}
+    .main #about .d-flex .sub-section .paragraph ul.history {display:flex;}
+    .main #about .d-flex .sub-section .paragraph ul.history li {margin-top:0 !important;letter-spacing: -.1em;font-weight:400;font-size:22px;}
+    .main #about .d-flex .sub-section .paragraph ul.history li:nth-child(2) {margin-left:-2em;}
+    .main #about .d-flex .sub-section .paragraph ul.history li:nth-child(3) {margin-left:-1.5em;}
+    .main #about .d-flex .sub-section .paragraph ul.history li:nth-child(4) {margin-left:-1em;}
+    .main #about .d-flex .sub-section .paragraph ul.history li:nth-child(5) {margin-left:-.5em;}
+    .main #about .d-flex .sub-section .paragraph ul.history li:nth-child(6) {margin-left:6px;}
+    .main #about .d-flex:last-child {margin-top:12px;}
+    .main #about .d-flex .sub-section .icon-location {position:absolute;left:40px;right:10px;bottom:15px;width:calc(100% - 50px);border-bottom:1px solid rgba(255,255,255,.2);height:36px;
+        background:url('../images/icon_location.png') no-repeat right center /auto 50%;}
+
+    .main #technology .sub-section.first {height:auto;}
+    .main #technology .progress {display:flex;align-items:flex-start;}
+    .main #technology .progress .mobile-flex {flex:0 0 50%;}
+    .main #technology .progress ul li {margin-bottom:10px;}
+    .main #technology .progress ul li label {font-size:10px;margin-bottom:5px;font-weight:300;}
+    .main #technology .d-flex .part-right {width:100%;}
+    .main #technology .paragraph .introTech li {display:flex;align-items:center;}
+    .main #technology .paragraph .introTech li label {width:55px;font-size:10px;}
+    .main #technology .paragraph .introTech li strong {font-size:10px;}
+    .main #technology .sub-section.first h3,.main #technology .sub-section.second h3 {left:auto;right:10px;}
+    .main #technology .sub-section.third br {display:none;}
+
+    .main #partners .sub-section.first {height:auto;margin-bottom:12px;}
+    .main #partners .d-flex {display:flex;flex-wrap:wrap;}
+    .main #partners .sub-section.second br,.main #partners .sub-section.third br {display:none;}
+    .main #partners .sub-section.second {flex:0 0 100%;width:100%;height:113px;background: url('../images/bg_partners_subsection_01_mobile.png') no-repeat -100px -90px rgba(255,255,255,0.9);border:none;order:2;}
+    .main #partners .sub-section.third {flex:0 0 100%;width:100%;height:113px;margin-left:0;order:1;}
+
+
+    .form-control {padding:5px;min-height:24px;border:1px solid #ccc;border-radius:2px;font-size:10px;}
+    .board .form-horizontal .form-group {display:block;font-size:10px;}
+    .board .form-horizontal .form-group.name .form-control {width:100%;}
+    .board .form-horizontal .form-group .wrap {width:100%;}
+    .board .form-horizontal .form-group.phone .wrap .form-control {width:100%;}
+    .board .form-horizontal .form-group label {margin-left:5px;font-size:10px;}
+    .board .form-horizontal .personal {height:60px;padding:5px;border-radius:2px;font-size:10px;color:#666;line-height:14px;}
+    .board .btn-primary {width:120px;height:32px;font-size:12px;margin-top:16px;}
+
+
+    .footer {flex-wrap:wrap;width:100%;padding:15px;}
+    .foot-header {width:100%;order:2;margin-bottom:35px;}
+    .foot-header .foot-logo {width:155px;height:30px;background-size:50%;}
+    .foot-header .policy li a {font-size:10px;}
+    .foot-header .policy li:nth-child(1),
+    .foot-header .policy li:nth-child(2),
+    .foot-header .policy li:nth-child(3) {display:none;}
+    .foot-header .copyright {font-size:10px;margin-top:10px;}
+    .foot-body {display:block;width:100%;order:1;}
+    .foot-body h3 {font-size:12px;margin-bottom:15px;}
+    .foot-body .info li {font-size:10px;line-height:16px;font-weight:300;}
+    .foot-body .info li:nth-child(1) {margin-bottom:4px;}
+    .foot-body .info li:nth-child(2) {margin-bottom:8px;}
+    .foot-body .contact-wrap {margin-top:35px;}
+    .foot-body .information-wrap {width:100%;}
+    .foot-body .information-wrap ul li {width:100%;}
+    .foot-body .icon-set {margin-bottom:50px;}
+
+    .toTop,.page-nav {display:none;}
+
+}
